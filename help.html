@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help — RanchMaster</title>
+  <meta name="description" content="How to use RanchMaster: fields and the satellite map, herd and groups, bull in / bull out, roundups, EID tag scanning, health, feeding, buying and selling, reports, crew sharing and backups." />
+  <link rel="icon" type="image/png" href="assets/icon-preview.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="assets/icon-preview.png" alt="RanchMaster app icon" />
+        <span>RanchMaster</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#pastures">Pastures &amp; Breeding</a>
+        <a href="index.html#crew">iCloud &amp; Crew</a>
+        <a href="help.html" aria-current="page">Help</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <a href="index.html#notify" class="btn btn-primary btn-sm">Notify Me</a>
+    </div>
+  </header>
+
+  <main class="container" id="top">
+    <div class="help-hero">
+      <div class="eyebrow">User Guide</div>
+      <h1>RanchMaster Help</h1>
+      <p class="lead">Step-by-step answers for every part of the app, from mapping your first field to sorting at the chute and sending reports to your accountant. The same help is in the app under <strong>More → Help</strong>.</p>
+      <div class="help-search">
+        <label for="help-q" class="visually-hidden">Search help</label>
+        <input type="search" id="help-q" placeholder="Search help: bull in, EID, withdrawal…" autocomplete="off" />
+      </div>
+      <p class="help-empty" id="help-empty" hidden>No help topics match that search. Try a different word, or <a href="support.html">contact support</a>.</p>
+    </div>
+
+    <nav class="help-topics" id="help-topics" aria-label="Help topics">
+          <a href="#getting-started" class="help-topic"><span class="card-badge badge-green">🚩</span><span>Getting Started</span></a>
+          <a href="#ranches-crew" class="help-topic"><span class="card-badge badge-blue">👥</span><span>Ranches &amp; Crew</span></a>
+          <a href="#fields-the-map" class="help-topic"><span class="card-badge badge-sky">🛰️</span><span>Fields &amp; the Map</span></a>
+          <a href="#herd-groups-animals" class="help-topic"><span class="card-badge badge-green">🐄</span><span>Herd, Groups &amp; Animals</span></a>
+          <a href="#moving-bull-in-out" class="help-topic"><span class="card-badge badge-teal">🔀</span><span>Moving &amp; Bull In / Out</span></a>
+          <a href="#roundups-counting-in" class="help-topic"><span class="card-badge badge-blue">🤠</span><span>Roundups &amp; Counting In</span></a>
+          <a href="#transport-costs" class="help-topic"><span class="card-badge badge-sky">🚚</span><span>Transport Costs</span></a>
+          <a href="#events-health" class="help-topic"><span class="card-badge badge-teal">💉</span><span>Events &amp; Health</span></a>
+          <a href="#feeding-inventory" class="help-topic"><span class="card-badge badge-green">🌾</span><span>Feeding &amp; Inventory</span></a>
+          <a href="#calving-breeding-culling" class="help-topic"><span class="card-badge badge-sky">🐮</span><span>Calving, Breeding &amp; Culling</span></a>
+          <a href="#weights-gain" class="help-topic"><span class="card-badge badge-blue">⚖️</span><span>Weights &amp; Gain</span></a>
+          <a href="#selling-shipping-reports" class="help-topic"><span class="card-badge badge-green">💵</span><span>Selling &amp; Shipping Reports</span></a>
+          <a href="#buying-cattle" class="help-topic"><span class="card-badge badge-teal">🛒</span><span>Buying Cattle</span></a>
+          <a href="#sorting-eid-readers" class="help-topic"><span class="card-badge badge-blue">📷</span><span>Sorting &amp; EID Readers</span></a>
+          <a href="#pasture-grazing" class="help-topic"><span class="card-badge badge-green">🌱</span><span>Pasture &amp; Grazing</span></a>
+          <a href="#reminders" class="help-topic"><span class="card-badge badge-sky">🔔</span><span>Reminders</span></a>
+          <a href="#reports-exports-clts" class="help-topic"><span class="card-badge badge-blue">📄</span><span>Reports, Exports &amp; CLTS</span></a>
+          <a href="#troubleshooting" class="help-topic"><span class="card-badge badge-teal">🛠️</span><span>Troubleshooting</span></a>
+          <a href="#backup-restore" class="help-topic"><span class="card-badge badge-sky">💾</span><span>Backup &amp; Restore</span></a>
+          <a href="#icloud-backup" class="help-topic"><span class="card-badge badge-blue">☁️</span><span>iCloud &amp; Backup</span></a>
+    </nav>
+
+    <div class="help-body">
+      <section class="help-section" id="getting-started">
+        <div class="help-section-head">
+          <span class="card-badge badge-green">🚩</span>
+          <h2>Getting Started</h2>
+        </div>
+          <div class="help-item">
+            <h3>The four tabs</h3>
+            <p>Work is for the day's jobs, the map and your fields. Herd lists every animal by group. Events shows everything recorded. More has reports, settings, reminders, inventory, exports and this help.</p>
+          </div>
+          <div class="help-item">
+            <h3>First steps</h3>
+            <ol><li>Add your fields (Work → New Field) and map them.</li><li>Add groups (Herd → + → New Group), e.g. Cow Herd, Bulls, Replacement Heifers, and give each a field.</li><li>Add animals (Herd → + → Add Animal).</li><li>Record what you do as you do it: moves, vaccinations, feeding, sales.</li></ol>
+          </div>
+          <div class="help-item">
+            <h3>Try it with sample data</h3>
+            <p>Load Sample Data (on an empty ranch or in More) creates a separate “Sample Ranch” with fields, animals and records to explore. Delete it from More → Ranches when you're done.</p>
+          </div>
+          <div class="help-item">
+            <h3>Works without signal</h3>
+            <p>Everything saves on your phone first. If you're signed in to iCloud it syncs when you have signal.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="ranches-crew">
+        <div class="help-section-head">
+          <span class="card-badge badge-blue">👥</span>
+          <h2>Ranches &amp; Crew</h2>
+        </div>
+          <div class="help-item">
+            <h3>Switching ranch</h3>
+            <p>Tap the ranch name at the top of the Work page to switch, or go to More → Ranches. Each ranch is completely separate: its own animals, fields, records, reports, Premises ID and currency.</p>
+          </div>
+          <div class="help-item">
+            <h3>Adding a ranch</h3>
+            <p>More → Ranches → New Ranch. Swipe a ranch you own to rename or delete it. Deleting removes it from every device and from everyone it's shared with.</p>
+          </div>
+          <div class="help-item">
+            <h3>Inviting crew</h3>
+            <p>Open the ranch, then More → Crew → Invite Crew. Send the link by Messages, Mail or AirDrop. Choose “Can make changes” or “View only” for each person. Use Manage to change access or remove someone, or Stop Sharing to remove everyone.</p>
+          </div>
+          <div class="help-item">
+            <h3>Joining someone&#x27;s ranch</h3>
+            <p>Tap the invitation they send you. Their ranch is added next to yours; nothing of yours is changed. It shows “Shared by” their name.</p>
+          </div>
+          <div class="help-item">
+            <h3>Leaving</h3>
+            <p>Swipe the ranch in More → Ranches and tap Leave, or More → Crew → Leave Ranch. If the owner removes you or stops sharing, the ranch is removed from your phone automatically.</p>
+          </div>
+          <div class="help-item">
+            <h3>View only</h3>
+            <p>On a view-only ranch you can see everything but the editing buttons are turned off.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="fields-the-map">
+        <div class="help-section-head">
+          <span class="card-badge badge-sky">🛰️</span>
+          <h2>Fields &amp; the Map</h2>
+        </div>
+          <div class="help-item">
+            <h3>Adding a field</h3>
+            <p>Work → New Field. Enter the name and acres, plus water and fence notes if you like.</p>
+          </div>
+          <div class="help-item">
+            <h3>Mapping a boundary</h3>
+            <p>Open the field → Map Boundary. Tap each corner in order on the satellite map. Once it's closed, tap near an edge to add a corner there. Use Undo or Clear to fix mistakes. The area is shown as you go.</p>
+          </div>
+          <div class="help-item">
+            <h3>Reading the map</h3>
+            <p>Red outline: a breeding bull is in with females. Yellow: stocked. White: empty. Each field's label shows head, females and males, groups, Bull in, and when it was last fed. Tap a field to open it.</p>
+          </div>
+          <div class="help-item">
+            <h3>Field page</h3>
+            <p>Shows the animals, groups, grazing days and AUMs, feeding, move history, and the bull in / bull out log with the earliest expected calving date.</p>
+          </div>
+          <div class="help-item">
+            <h3>Printable map</h3>
+            <p>More → Reports → Ranch Map makes a printable PDF with all fields, their head counts and groups, and a table of every field.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="herd-groups-animals">
+        <div class="help-section-head">
+          <span class="card-badge badge-green">🐄</span>
+          <h2>Herd, Groups &amp; Animals</h2>
+        </div>
+          <div class="help-item">
+            <h3>Herd page</h3>
+            <p>Animals are listed by group, then Ungrouped. Use Show to filter (Active, Females, Bulls, Steers, Sold/Dead, All), Filter by date for a date range, and search by tag, RFID, name or tag colour.</p>
+          </div>
+          <div class="help-item">
+            <h3>Selecting several</h3>
+            <p>Tap Select, tick animals (or Select All in a group), then put them in a group, move them, or record an event for all of them.</p>
+          </div>
+          <div class="help-item">
+            <h3>Groups</h3>
+            <p>Each group's ⋯ menu: details, move the whole group, record an event, sell the group, rename, delete. Putting animals in a group that has a field also moves them there.</p>
+          </div>
+          <div class="help-item">
+            <h3>An animal&#x27;s page</h3>
+            <p>Photo, tag and RFID, details, weights and daily gain, breeding record, money (purchase, feed, drug and shipping costs, sale, profit), feeding, parents and family tree, and full history.</p>
+          </div>
+          <div class="help-item">
+            <h3>Tags</h3>
+            <p>Use Change Tag on the animal's page so the old tag stays in the history. RFIDs are 15 digits; Canadian CCIA tags start with 124.</p>
+          </div>
+          <div class="help-item">
+            <h3>Photos</h3>
+            <p>Tap the camera button on an animal's page to take or choose a photo.</p>
+          </div>
+          <div class="help-item">
+            <h3>Parents &amp; family tree</h3>
+            <p>Set the sire and dam on the Edit page (or the sire when recording a calf). Family Tree shows grandparents, parents and calves.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="moving-bull-in-out">
+        <div class="help-section-head">
+          <span class="card-badge badge-teal">🔀</span>
+          <h2>Moving &amp; Bull In / Out</h2>
+        </div>
+          <div class="help-item">
+            <h3>Moving animals</h3>
+            <p>Work → Move Animals, pick the animals or whole groups, choose the field. Or use Move on an animal's, group's or field's page.</p>
+          </div>
+          <div class="help-item">
+            <h3>Bull in / bull out</h3>
+            <p>A breeding bull is a male that isn't castrated and is marked Breeding bull. When a move puts a bull with females, Bull In is recorded for that field; when they're separated, Bull Out. The Move screen shows what will be recorded, and you can turn it off. Bull calves recorded with Record Calf don't count.</p>
+          </div>
+          <div class="help-item">
+            <h3>Inbreeding warning</h3>
+            <p>If a move would put a bull in with his daughter, granddaughter, dam, sister or other close relative, the Move screen and the field's page show a Related animals warning.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="roundups-counting-in">
+        <div class="help-section-head">
+          <span class="card-badge badge-blue">🤠</span>
+          <h2>Roundups &amp; Counting In</h2>
+        </div>
+          <div class="help-item">
+            <h3>Starting a roundup</h3>
+            <p>Tap Round Up on the Work page (or More → Round Ups → +). Pick the field to gather, optionally just one group in it, and the field they're going to. Add the transportation cost and trucker if there was one. Choose All now, count later (everyone is moved straight away) or As they're counted (each animal moves when you count it). Bull in / out and the related-animals warning work as for any move.</p>
+          </div>
+          <div class="help-item">
+            <h3>Counting in later</h3>
+            <p>Open the roundup from Count pending on the Work page or More → Round Ups, any time later and in as many sittings as you like, on any phone that has the ranch. Scan tags with an EID wand, Bluetooth reader or the camera, type them, or tap animals in the Not seen list. It shows how many of the expected animals are counted. A tag from another field or group can be added as an extra; it's moved here.</p>
+          </div>
+          <div class="help-item">
+            <h3>Finishing the count</h3>
+            <p>Tap Finish Count. For each animal not seen choose Left behind (put back in the field it came from, dated the roundup day, and taken off the trucking bill), Missing (stays where the records say and is flagged – Herd → Show → Missing), Was there, or Dead. The transportation cost is re-split over the animals that actually made the trip.</p>
+          </div>
+          <div class="help-item">
+            <h3>Reminder</h3>
+            <p>An open roundup appears in Reminders as Count pending two days after the move.</p>
+          </div>
+          <div class="help-item">
+            <h3>When a missing animal turns up</h3>
+            <p>A missing animal's page shows Missing since … with a Found It button: say where it was – with the herd (nothing changes), back in the field it came from (it never made the trip: put back, its trucking share removed and re-split), somewhere else (moved there, optional transport cost) or found dead. It's also marked found automatically when it's scanned in Sort or a round up count, moved, weighed, treated or sold, with a Found note in its history. The closed round up then shows it as Found later, also in its summary PDF.</p>
+          </div>
+          <div class="help-item">
+            <h3>Missing report</h3>
+            <p>More → Reports → Missing lists every missing animal, how many days it's been gone and which round up, with Found It. After 30 days you can Write Off as Lost, which takes it off the herd count as a death loss.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="transport-costs">
+        <div class="help-section-head">
+          <span class="card-badge badge-sky">🚚</span>
+          <h2>Transport Costs</h2>
+        </div>
+          <div class="help-item">
+            <h3>Trucking on a move</h3>
+            <p>Every Move screen has an optional Transportation cost and trucker. The cost is split evenly over the animals moved, shown on each animal's page as Trucking / transport, and taken off its profit. The year-end summary lists it as Trucking &amp; transport (moves).</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="events-health">
+        <div class="help-section-head">
+          <span class="card-badge badge-teal">💉</span>
+          <h2>Events &amp; Health</h2>
+        </div>
+          <div class="help-item">
+            <h3>Recording an event</h3>
+            <p>Work → Record Event (or from an animal or group): branding, medication, vaccination, weighing, preg check, castrated, weaned, bull in/out, sold, note.</p>
+          </div>
+          <div class="help-item">
+            <h3>Withdrawal periods</h3>
+            <p>Enter the withdrawal days from the drug label. The animal shows “Safe to ship after” that date in orange until it passes. The Events tab and More → Health &amp; Withdrawals list animals not safe to ship yet, and selling one asks you to confirm.</p>
+          </div>
+          <div class="help-item">
+            <h3>Boosters</h3>
+            <p>On a vaccination, enter “Booster in __ days” and a reminder is made for the booster.</p>
+          </div>
+          <div class="help-item">
+            <h3>Drugs from inventory</h3>
+            <p>Pick the product from inventory and the dose per head: stock is counted down and each animal's drug cost is recorded.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="feeding-inventory">
+        <div class="help-section-head">
+          <span class="card-badge badge-green">🌾</span>
+          <h2>Feeding &amp; Inventory</h2>
+        </div>
+          <div class="help-item">
+            <h3>Recording feed</h3>
+            <p>Work → Feed (or Feed This Field). Choose the field or group, feed, amount and cost. The amount and cost are split evenly over the animals fed and added to each animal's feed cost.</p>
+          </div>
+          <div class="help-item">
+            <h3>Inventory</h3>
+            <p>More → Inventory: hay, grain, mineral, vaccines and drugs with quantity, cost per unit and a low-stock warning. Restock adds to the stock and keeps an average cost. Feeding and treatments picked “From inventory” count it down.</p>
+          </div>
+          <div class="help-item">
+            <h3>Contacts</h3>
+            <p>More → Contacts: your vet, suppliers, buyers and truckers. Tap a number to call.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="calving-breeding-culling">
+        <div class="help-section-head">
+          <span class="card-badge badge-sky">🐮</span>
+          <h2>Calving, Breeding &amp; Culling</h2>
+        </div>
+          <div class="help-item">
+            <h3>Recording a calf</h3>
+            <p>Open the cow → Record Calf: tag, sex, birth weight, calving ease (1 no help … 5 abnormal), calf vigour (1 up and nursing … 5 dead at birth) and the sire.</p>
+          </div>
+          <div class="help-item">
+            <h3>Preg checks</h3>
+            <p>Record Event → Preg Check: Pregnant (with estimated days bred, which gives the expected calving date) or Open.</p>
+          </div>
+          <div class="help-item">
+            <h3>Cull list</h3>
+            <p>More → Reports → Cull List shows animals open at preg check, 10 years or older, with a hard calving or a weak or lost calf, or marked to cull on their Edit page. Swipe to mark or unmark.</p>
+          </div>
+          <div class="help-item">
+            <h3>Calving &amp; weaning report</h3>
+            <p>Calves born, heifers and bulls, average birth weight, calving ease scores, expected calving from bull-in dates, and weaning weights.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="weights-gain">
+        <div class="help-section-head">
+          <span class="card-badge badge-blue">⚖️</span>
+          <h2>Weights &amp; Gain</h2>
+        </div>
+          <div class="help-item">
+            <h3>Weighing</h3>
+            <p>Record Event → Weighing on an animal. Its page shows the daily gain between the last two weigh-ins and over all its weights.</p>
+          </div>
+          <div class="help-item">
+            <h3>Weaning weight</h3>
+            <p>Record Event → Weaned with the weight. The calf's page shows its weaning weight and that weight as a percentage of its dam's weight.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="selling-shipping-reports">
+        <div class="help-section-head">
+          <span class="card-badge badge-green">💵</span>
+          <h2>Selling &amp; Shipping Reports</h2>
+        </div>
+          <div class="help-item">
+            <h3>Selling one animal</h3>
+            <p>Animal's page → Mark Sold or Dead, or Record Event → Sold. Enter the sale weight and price, and the buyer, trucker and shipping cost.</p>
+          </div>
+          <div class="help-item">
+            <h3>Selling a group</h3>
+            <p>A group's ⋯ menu → Sell Group, or select animals → Record Event → Sold. Enter the total proceeds, total weight and shipping cost; they're divided evenly per head. You can leave out animals still in a withdrawal period.</p>
+          </div>
+          <div class="help-item">
+            <h3>Selling a load</h3>
+            <p>Tap Sell Cattle on the Work page (beside Buy Cattle). Step 1: date, auction mart or buyer, destination Premises ID, trucker, gross proceeds, shipping, commission &amp; fees, weight, manifest and brand inspection numbers. Step 2: pick the animals by whole group, by ticking them, or by scanning RFIDs or typing tags (EID wand, Bluetooth reader or camera). Animals not safe to ship yet are flagged. Step 3: review each animal's sale price, costs, net and profit, weigh each animal and split by weight if you like, then tap Sell. A shipping report is saved and opens.</p>
+          </div>
+          <div class="help-item">
+            <h3>Shipping reports</h3>
+            <p>Every sale saves a printable shipping report and opens it. Find them all in More → Historical Shipping Reports. Use Print or Share at the top.</p>
+          </div>
+          <div class="help-item">
+            <h3>Profit</h3>
+            <p>Each animal's profit is its sale price less shipping, purchase price, feed and drug costs. More → Reports → Sales &amp; Profit adds it all up for a period.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="buying-cattle">
+        <div class="help-section-head">
+          <span class="card-badge badge-teal">🛒</span>
+          <h2>Buying Cattle</h2>
+        </div>
+          <div class="help-item">
+            <h3>Entering a load</h3>
+            <p>Tap Buy Cattle on the Work page (or Herd → + → Buy a Load of Cattle, or More → Purchases → +). Step 1 is the load: date, auction mart or private sale, seller, the seller's Premises ID, head on the load, price paid, trucking, commission and fees, total weight, manifest and brand inspection numbers.</p>
+          </div>
+          <div class="help-item">
+            <h3>Adding the animals</h3>
+            <p>Step 2: set what's the same for all of them (kind, breed, approximate age, arrival weight or weigh each one). Then for each animal scan its RFID with an EID wand, Bluetooth reader or the camera, or type it, and check the visual tag number and colour. Tag numbers count up by themselves. The count shows how many of the load you've entered. Duplicate RFIDs or tags are caught before they're added.</p>
+          </div>
+          <div class="help-item">
+            <h3>Arrival</h3>
+            <p>Step 3: choose a group (or make a new one) and the receiving field. The animals are moved there, so bull in / out is worked out. You can also give every animal a vaccination or treatment on arrival, drawn from inventory.</p>
+          </div>
+          <div class="help-item">
+            <h3>How the cost is split</h3>
+            <p>Price + trucking + fees are divided evenly per head, or by arrival weight if you weighed each animal and turn on Split by weight. Each animal's share becomes its purchase price, so profit, Sales &amp; Profit and the year-end summary include freight and fees.</p>
+          </div>
+          <div class="help-item">
+            <h3>Purchase records</h3>
+            <p>More → Purchases lists every load with its total cost, cost per head and per lb, the animals, and a printable Purchase Report PDF. Deleting a purchase record keeps the animals.</p>
+          </div>
+          <div class="help-item">
+            <h3>CLTS</h3>
+            <p>Bought animals appear in the CLTS export as move-ins on the load's date with the seller and the seller's Premises ID.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="sorting-eid-readers">
+        <div class="help-section-head">
+          <span class="card-badge badge-blue">📷</span>
+          <h2>Sorting &amp; EID Readers</h2>
+        </div>
+          <div class="help-item">
+            <h3>Sorting at the chute</h3>
+            <p>Work → Sort. Scan a tag with the camera, type it, or use an EID reader. Then tap the field the animal goes to. It's moved right away and the screen is ready for the next one.</p>
+          </div>
+          <div class="help-item">
+            <h3>Bluetooth wands</h3>
+            <p>Wands that work as a Bluetooth keyboard are paired in the iPhone's Settings → Bluetooth; choose EID Reader in Sort and scan. Bluetooth LE readers connect in More → EID Reader and reconnect by themselves.</p>
+          </div>
+          <div class="help-item">
+            <h3>Same tag number</h3>
+            <p>If two animals share a number, you're asked which one.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="pasture-grazing">
+        <div class="help-section-head">
+          <span class="card-badge badge-green">🌱</span>
+          <h2>Pasture &amp; Grazing</h2>
+        </div>
+          <div class="help-item">
+            <h3>Grazing days and AUMs</h3>
+            <p>Each field shows days grazed and rested, how long it's been grazed or rested, AUMs used and the stocking rate, worked out from move history. More → Reports → Pasture &amp; Grazing shows every field.</p>
+          </div>
+          <div class="help-item">
+            <h3>Animal units</h3>
+            <p>Set how many animal units each kind counts as in More → Animal Units (a 1,000 lb cow is 1 AU). Set calves to 0 if you count pairs.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="reminders">
+        <div class="help-section-head">
+          <span class="card-badge badge-sky">🔔</span>
+          <h2>Reminders</h2>
+        </div>
+          <div class="help-item">
+            <h3>What&#x27;s reminded</h3>
+            <p>More → Reminders lists boosters, bull out at the end of the breeding season, preg check after bull out, and the day each animal is safe to ship, plus reminders you add with +.</p>
+          </div>
+          <div class="help-item">
+            <h3>Notifications</h3>
+            <p>Turn on Notifications at 8 am to be reminded on the day. Set the breeding season and preg-check timing at the bottom of the Reminders page.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="reports-exports-clts">
+        <div class="help-section-head">
+          <span class="card-badge badge-blue">📄</span>
+          <h2>Reports, Exports &amp; CLTS</h2>
+        </div>
+          <div class="help-item">
+            <h3>Reports</h3>
+            <p>More → Reports: Ranch Map, Herd Inventory, Sales &amp; Profit, Feed &amp; Feed Cost, Calving &amp; Weaning, Pasture &amp; Grazing, Cull List, Health &amp; Withdrawals. Most have a period picker.</p>
+          </div>
+          <div class="help-item">
+            <h3>Excel and CSV</h3>
+            <p>More → Export: an Excel workbook (Animals, Events, Feed, Sales) or CSV files to save, email or AirDrop.</p>
+          </div>
+          <div class="help-item">
+            <h3>Year-end summary</h3>
+            <p>More → Export → Year-End Summary: a PDF of income, expenses, head counts and sales for your accountant.</p>
+          </div>
+          <div class="help-item">
+            <h3>CLTS</h3>
+            <p>Set the ranch's Premises ID in More, then More → CLTS Export for a CSV of tag activations, move-ins, move-outs and deaths with RFIDs.</p>
+          </div>
+          <div class="help-item">
+            <h3>Currency</h3>
+            <p>More → Currency sets the currency for the ranch. Amounts already entered aren't converted.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="troubleshooting">
+        <div class="help-section-head">
+          <span class="card-badge badge-teal">🛠️</span>
+          <h2>Troubleshooting</h2>
+        </div>
+          <div class="help-item">
+            <h3>Not syncing</h3>
+            <p>Check More shows your iCloud status. You must be signed in to iCloud in the Settings app, and the app needs signal to send changes. Changes made offline are kept and sent later.</p>
+          </div>
+          <div class="help-item">
+            <h3>Crew can&#x27;t see the ranch</h3>
+            <p>They need RanchMaster installed and must tap the invitation on the phone signed in to the Apple Account you invited. Check More → Crew shows them as accepted.</p>
+          </div>
+          <div class="help-item">
+            <h3>Map is blank</h3>
+            <p>The satellite map and the Ranch Map PDF need an internet connection to draw. Field outlines and everything else work offline.</p>
+          </div>
+          <div class="help-item">
+            <h3>Camera won&#x27;t read tags</h3>
+            <p>Hold the tag flat and well lit, fill most of the frame, and tap a highlighted number if it isn't picked up. Camera scanning needs a newer iPhone; use Keyboard or an EID wand otherwise.</p>
+          </div>
+          <div class="help-item">
+            <h3>A number I typed was lost</h3>
+            <p>Numbers are saved as you type. If something still looks wrong, open the record again and check it.</p>
+          </div>
+          <div class="help-item">
+            <h3>Can&#x27;t edit anything</h3>
+            <p>The ranch was shared with you as View only. Ask the owner to change your access in their More → Crew.</p>
+          </div>
+          <div class="help-item">
+            <h3>Deleted something by mistake</h3>
+            <p>Deleted records can't be brought back in the app, so swipe carefully. Sold and dead animals are kept; use Mark Sold or Dead instead of deleting.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="backup-restore">
+        <div class="help-section-head">
+          <span class="card-badge badge-sky">💾</span>
+          <h2>Backup &amp; Restore</h2>
+        </div>
+          <div class="help-item">
+            <h3>What&#x27;s backed up</h3>
+            <p>Your own ranches: every animal, field and map, group, event, feeding, sale, purchase, round up, inventory item, contact, reminder and photo, plus the ranch's Premises ID and currency and your animal-unit settings. Ranches shared with you aren't included – their owner backs them up.</p>
+          </div>
+          <div class="help-item">
+            <h3>Backing up</h3>
+            <p>More → Backup &amp; Restore → Back Up Now (all your ranches, or one). Then Save or Send This Backup to put a copy in iCloud Drive, on a computer, or in an email, so it's safe if the phone is lost.</p>
+          </div>
+          <div class="help-item">
+            <h3>Automatic backups</h3>
+            <p>With Back up automatically each day on, a backup is made when you leave the app, at most once a day. The last 10 are kept in Files → On My iPhone → RanchMaster → Backups.</p>
+          </div>
+          <div class="help-item">
+            <h3>Restoring</h3>
+            <p>Tap a backup in the list, choose Restore from a File, or open a .ranchbackup file from Files, Mail or AirDrop. You see what's in it first. Restore as a New Ranch adds a copy beside your ranches without changing anything. Replace puts the ranch back exactly as it was in the backup; you type the ranch name to confirm, and a backup of it as it is now is made first. If the ranch is shared, the change reaches your crew too.</p>
+          </div>
+          <div class="help-item">
+            <h3>Damaged files</h3>
+            <p>Every backup has a checksum. A damaged or edited file is refused and nothing is changed.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+      <section class="help-section" id="icloud-backup">
+        <div class="help-section-head">
+          <span class="card-badge badge-blue">☁️</span>
+          <h2>iCloud &amp; Backup</h2>
+        </div>
+          <div class="help-item">
+            <h3>Sync</h3>
+            <p>When you're signed in to iCloud, every ranch syncs to your other iPhones and iPads and to your crew, and is backed up in iCloud. The status line at the top of More shows when it last synced.</p>
+          </div>
+          <div class="help-item">
+            <h3>No signal</h3>
+            <p>Keep working. Changes are saved on the phone and sent when you're back in range.</p>
+          </div>
+          <div class="help-item">
+            <h3>Two people, same record</h3>
+            <p>If two people change the same animal at the same time, the change sent last is kept.</p>
+          </div>
+        <a href="#top" class="help-back">Back to topics ↑</a>
+      </section>
+    </div>
+
+    <div class="cta-banner help-cta">
+      <h2>Still stuck?</h2>
+      <p>Send a note with what you were trying to do and what happened, and we’ll help you sort it out.</p>
+      <a href="support.html" class="btn btn-secondary">Contact Support</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2026 RanchMaster. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var q = document.getElementById("help-q");
+      var topics = document.getElementById("help-topics");
+      var empty = document.getElementById("help-empty");
+      var sections = Array.prototype.slice.call(document.querySelectorAll(".help-section"));
+      q.addEventListener("input", function () {
+        var term = q.value.trim().toLowerCase();
+        var shown = 0;
+        sections.forEach(function (sec) {
+          var title = sec.querySelector("h2").textContent.toLowerCase();
+          var items = sec.querySelectorAll(".help-item");
+          var any = false;
+          items.forEach(function (it) {
+            var hit = !term || title.indexOf(term) !== -1 || it.textContent.toLowerCase().indexOf(term) !== -1;
+            it.hidden = !hit;
+            if (hit) any = true;
+          });
+          sec.hidden = !any;
+          if (any) shown++;
+        });
+        topics.hidden = !!term;
+        empty.hidden = shown !== 0;
+      });
+    })();
+  </script>
+</body>
+</html>

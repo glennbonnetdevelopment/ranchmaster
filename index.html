@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RanchMaster — Cattle, Pasture &amp; Crew Management for iPhone and iPad</title>
+  <meta name="description" content="Track cattle, pastures, breeding, feed costs, EID tags, and crew sync—even offline in the field. Built for iPhone and iPad." />
+  <link rel="icon" type="image/png" href="assets/icon-preview.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="assets/icon-preview.png" alt="RanchMaster app icon" />
+        <span>RanchMaster</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#pastures">Pastures &amp; Breeding</a>
+        <a href="#crew">iCloud &amp; Crew</a>
+        <a href="#reports">Reports</a>
+        <a href="help.html">Help</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <a href="#notify" class="btn btn-primary btn-sm">Notify Me</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">iPhone &amp; iPad · iOS 17+ · Offline-First</div>
+          <h1>Run your ranch from the pasture, the chute, or the truck.</h1>
+          <p class="lead">
+            RanchMaster keeps your herd, pastures, breeding records, feed costs, and crew in sync—built to work without cell service and sync automatically over iCloud when you’re back in range.
+          </p>
+          <div class="notify-box" id="notify">
+            <label for="hero-email" class="notify-label">Be notified of the App Store release:</label>
+            <form class="notify-form" data-notify-form>
+              <input id="hero-email" name="email" type="email" class="notify-input" placeholder="you@example.com" required autocomplete="email" aria-label="Email address for release notification" />
+              <button type="submit" class="btn btn-primary">Notify Me</button>
+              <a href="#features" class="btn btn-secondary">Explore Features</a>
+            </form>
+            <p class="notify-status" aria-live="polite"></p>
+          </div>
+          <div class="hero-meta">
+            <span>✓ Works offline on the ranch</span>
+            <span>✓ EID &amp; camera tag scanning</span>
+            <span>✓ Built-in sample ranch to try</span>
+            <span>✓ <a href="help.html">Full user guide</a></span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-frame">
+            <img src="assets/screenshot.png" alt="RanchMaster Work tab showing quick actions and satellite pasture map" />
+          </div>
+          <div class="phone-frame secondary">
+            <img src="assets/screenshot-herd.png" alt="RanchMaster Herd tab showing cattle groups and individual records" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Everything your operation needs in one place</h2>
+          <p>Designed for real ranch workflows—from chute-side sorting to year-end accounting.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-badge badge-green">🐄</div>
+            <h3>Herd &amp; Group Tracking</h3>
+            <p>Track ear tag numbers and colours with full tag history, photos, breed, birth/purchase data, pedigree, and per-animal profit after feed, drug, and shipping costs.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge badge-blue">📷</div>
+            <h3>Chute-Side Sort &amp; EID</h3>
+            <p>Scan ear tags with your iPhone or iPad camera, type tags by hand, or connect Bluetooth keyboard wands and BLE EID readers (15-digit CCIA tags) to sort animals fast.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge badge-sky">🛰️</div>
+            <h3>Satellite Field Mapping</h3>
+            <p>Tap corners on a satellite map to draw field boundaries and calculate acres. Monitor grazing days, rest periods, AUMs used, stocking rates, and fence/water notes.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge badge-teal">💉</div>
+            <h3>Health &amp; Withdrawals</h3>
+            <p>Log vaccinations and treatments with dose and withdrawal days. Check the “Not safe to ship yet” list anytime and get 8:00 AM reminders for boosters and safe-to-ship dates.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge badge-green">🌾</div>
+            <h3>Feeding &amp; Inventory</h3>
+            <p>Record feeding by field or group and split quantities and costs evenly per head. Manage feed, drug, and supply stock with average costs and low-stock alerts.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-badge badge-sky">📈</div>
+            <h3>Calving, Preg Check &amp; Cull List</h3>
+            <p>Log calving ease (BIF 1–5), calf vigour, preg checks, weaning weights (% of dam), and average daily gain. Surface cull candidates automatically.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pastures">
+      <div class="container">
+        <div class="split-panel">
+          <div>
+            <h2>Automatic Bull In / Bull Out &amp; Pasture Status</h2>
+            <p>
+              Stop guessing when cows were exposed or which pasture is ready to rest. Moving bulls or females automatically logs bull exposure, computes earliest expected calving dates (+283 days), and warns you before turning a bull in with closely related females.
+            </p>
+            <ul class="checklist">
+              <li>
+                <span class="check-dot">✓</span>
+                <span><strong>Live field overlays:</strong> See head count, female/male split, groups, bull-in dates, and last-fed status right on the map.</span>
+              </li>
+              <li>
+                <span class="check-dot">✓</span>
+                <span><strong>Family tree &amp; pedigree:</strong> View grandparents, parents, and calves on each animal’s page, including AI or outside sires.</span>
+              </li>
+              <li>
+                <span class="check-dot">✓</span>
+                <span><strong>Smart reminders:</strong> Automatic alerts for bull out, preg check, vaccine boosters, and withdrawal clearances.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="legend-strip" aria-label="Field map color legend">
+            <div class="legend-item">
+              <span class="swatch swatch-red"></span>
+              <div>
+                <strong>Red Outline — Bull In with Females</strong>
+                <div style="font-size: 0.9rem; color: var(--text-muted);">Breeding bull currently in the field with females; earliest calving tracked automatically.</div>
+              </div>
+            </div>
+            <div class="legend-item">
+              <span class="swatch swatch-yellow"></span>
+              <div>
+                <strong>Yellow Outline — Stocked</strong>
+                <div style="font-size: 0.9rem; color: var(--text-muted);">Cattle grazing or penned with live head count, AUMs, and days grazed.</div>
+              </div>
+            </div>
+            <div class="legend-item">
+              <span class="swatch swatch-white"></span>
+              <div>
+                <strong>White Outline — Empty / Resting</strong>
+                <div style="font-size: 0.9rem; color: var(--text-muted);">Tracks days rested since the last animals moved out.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="crew">
+      <div class="container">
+        <div class="split-panel">
+          <div>
+            <h2>Built for Multi-Ranch Crew Sharing</h2>
+            <p>
+              Work across your own ranches and ranches shared with you—each kept in its own isolated database and iCloud zone so records never mix.
+            </p>
+            <ul class="checklist">
+              <li>
+                <span class="check-dot">✓</span>
+                <span><strong>Invite via Apple Sharing:</strong> Send a crew invite over Messages, Mail, or AirDrop with <em>Can make changes</em> or <em>View only</em> permissions.</span>
+              </li>
+              <li>
+                <span class="check-dot">✓</span>
+                <span><strong>Offline-first sync:</strong> Everything saves to your iPhone or iPad first and syncs via CloudKit when you have signal.</span>
+              </li>
+              <li>
+                <span class="check-dot">✓</span>
+                <span><strong>No extra accounts:</strong> Crew members only need RanchMaster and their Apple Account.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="reports">
+            <h2>Printable PDFs, Excel &amp; CLTS Exports</h2>
+            <p>
+              Turn daily ranch records into clean paperwork for buyers, vets, regulators, and your accountant in seconds.
+            </p>
+            <ul class="checklist">
+              <li>
+                <span class="check-dot">✓</span>
+                <span><strong>Shipping Report PDFs:</strong> Generated automatically when you record a sale—complete with buyer, trucker, trucking/commission/yardage split, and withdrawal flags.</span>
+              </li>
+              <li>
+                <span class="check-dot">✓</span>
+                <span><strong>Ranch Map &amp; Year-End PDFs:</strong> Landscape satellite pasture map and a full Year-End Summary of income, expenses, inventory value, and sales.</span>
+              </li>
+              <li>
+                <span class="check-dot">✓</span>
+                <span><strong>Excel (.xlsx), CSV &amp; CLTS:</strong> Export Animals, Events, Feed, Sales, or CCIA/CLTS traceability CSVs with your Premises ID.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots">
+      <div class="container">
+        <div class="section-header">
+          <h2>See RanchMaster in Action</h2>
+          <p>Built for clarity in bright sunlight, at the chute, and at the desk.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <div class="gallery-frame">
+              <img src="assets/screenshots/01-Work.png" alt="Work tab with quick actions and satellite pasture map" loading="lazy" />
+            </div>
+            <figcaption>Work &amp; Pasture Map</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-frame">
+              <img src="assets/screenshots/02-Herd.png" alt="Herd tab with cattle groups and tag search" loading="lazy" />
+            </div>
+            <figcaption>Herd &amp; Groups</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-frame">
+              <img src="assets/screenshots/03-Animal.png" alt="Animal detail screen with pedigree, weights, and profit" loading="lazy" />
+            </div>
+            <figcaption>Animal Profile</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-frame">
+              <img src="assets/screenshots/04-Field.png" alt="Field screen with grazing days, AUMs, and bull log" loading="lazy" />
+            </div>
+            <figcaption>Field &amp; Grazing</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-frame">
+              <img src="assets/screenshots/05-Sort.png" alt="Chute-side Sort screen with camera and EID scanning" loading="lazy" />
+            </div>
+            <figcaption>Chute-Side Sort</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-frame">
+              <img src="assets/screenshots/06-ShippingReport.png" alt="Printable Shipping Report PDF preview" loading="lazy" />
+            </div>
+            <figcaption>Shipping Report PDF</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-frame">
+              <img src="assets/screenshots/07-Reports.png" alt="Reports and exports menu" loading="lazy" />
+            </div>
+            <figcaption>Reports &amp; Exports</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-frame">
+              <img src="assets/screenshots/08-Ranches.png" alt="Multi-ranch switcher and iCloud crew sharing" loading="lazy" />
+            </div>
+            <figcaption>Ranches &amp; Crew</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Be notified when RanchMaster launches</h2>
+          <p>Coming soon for iPhone and iPad. Enter your email to get a one-time notification on release day.</p>
+          <form class="notify-form" data-notify-form>
+            <input name="email" type="email" class="notify-input" placeholder="you@example.com" required autocomplete="email" aria-label="Email address for release notification" />
+            <button type="submit" class="btn btn-secondary">Notify Me</button>
+          </form>
+          <p class="notify-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year">2026</span> RanchMaster. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="help.html">Help</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.querySelectorAll("[data-notify-form]").forEach((form) => {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const input = form.querySelector('input[type="email"]');
+        const status = form.parentElement.querySelector(".notify-status");
+        const email = input.value.trim();
+        if (!email) return;
+
+        // Static-site fallback: open a pre-filled email to info@glennbonnet.com or replace with a form endpoint (e.g. Formspree).
+        const subject = encodeURIComponent("RanchMaster Release Notification");
+        const body = encodeURIComponent("Please notify me when RanchMaster is released on the App Store.\n\nEmail: " + email);
+        window.location.href = "mailto:info@glennbonnet.com?subject=" + subject + "&body=" + body;
+
+        status.textContent = "Thanks! Your email app has been opened to register " + email + " for release updates.";
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
