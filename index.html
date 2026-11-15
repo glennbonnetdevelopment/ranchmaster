@@ -310,7 +310,7 @@
         // Static-site fallback: open a pre-filled email to info@glennbonnet.com or replace with a form endpoint (e.g. Formspree).
         const subject = encodeURIComponent("RanchMaster Release Notification");
         const body = encodeURIComponent("Please notify me when RanchMaster is released on the App Store.\n\nEmail: " + email);
-        window.location.href = "mailto:info@glennbonnet.com?subject=" + subject + "&body=" + body;
+        window.location.href = "mailto:info@ranchmaster.ca?subject=" + subject + "&body=" + body;
 
         status.textContent = "Thanks! Your email app has been opened to register " + email + " for release updates.";
         form.reset();
