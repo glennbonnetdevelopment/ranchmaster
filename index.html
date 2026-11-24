@@ -24,7 +24,7 @@
         <a href="help.html">Help</a>
         <a href="support.html">Support</a>
       </nav>
-      <a href="#notify" class="btn btn-primary btn-sm">Notify Me</a>
+      <a href="https://apps.apple.com/ca/app/ranchmaster/id6834270808" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Purchase Now</a>
     </div>
   </header>
 
@@ -37,14 +37,9 @@
           <p class="lead">
             RanchMaster keeps your herd, pastures, breeding records, feed costs, and crew in sync—built to work without cell service and sync automatically over iCloud when you’re back in range.
           </p>
-          <div class="notify-box" id="notify">
-            <label for="hero-email" class="notify-label">Be notified of the App Store release:</label>
-            <form class="notify-form" data-notify-form>
-              <input id="hero-email" name="email" type="email" class="notify-input" placeholder="you@example.com" required autocomplete="email" aria-label="Email address for release notification" />
-              <button type="submit" class="btn btn-primary">Notify Me</button>
-              <a href="#features" class="btn btn-secondary">Explore Features</a>
-            </form>
-            <p class="notify-status" aria-live="polite"></p>
+          <div class="hero-actions" style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px;">
+            <a href="https://apps.apple.com/ca/app/ranchmaster/id6834270808" class="btn btn-primary" target="_blank" rel="noopener">Purchase Now</a>
+            <a href="#features" class="btn btn-secondary">Explore Features</a>
           </div>
           <div class="hero-meta">
             <span>✓ Works offline on the ranch</span>
@@ -87,14 +82,14 @@
 
           <article class="card">
             <div class="card-badge badge-sky">🛰️</div>
-            <h3>Satellite Field Mapping</h3>
-            <p>Tap corners on a satellite map to draw field boundaries and calculate acres. Monitor grazing days, rest periods, AUMs used, stocking rates, and fence/water notes.</p>
+            <h3>Satellite Field Mapping &amp; AgSaver</h3>
+            <p>Tap corners on a satellite map to draw field boundaries and calculate acres. RanchMaster and <a href="https://glennbonnet.com/agsaver.html">AgSaver</a> work together and can share field mappings between the programs via GeoJSON—outline a field once and use it in both apps without touching herd or equipment records.</p>
           </article>
 
           <article class="card">
             <div class="card-badge badge-teal">💉</div>
             <h3>Health &amp; Withdrawals</h3>
-            <p>Log vaccinations and treatments with dose and withdrawal days. Check the “Not safe to ship yet” list anytime and get reminders for boosters and safe-to-ship dates.</p>
+            <p>Log vaccinations and treatments with dose and withdrawal days. Check the “Not safe to ship yet” list anytime and get 8:00 AM reminders for boosters and safe-to-ship dates.</p>
           </article>
 
           <article class="card">
@@ -274,13 +269,11 @@
     <section>
       <div class="container">
         <div class="cta-banner">
-          <h2>Be notified when RanchMaster launches</h2>
-          <p>Coming soon for iPhone and iPad. Enter your email to get a one-time notification on release day.</p>
-          <form class="notify-form" data-notify-form>
-            <input name="email" type="email" class="notify-input" placeholder="you@example.com" required autocomplete="email" aria-label="Email address for release notification" />
-            <button type="submit" class="btn btn-secondary">Notify Me</button>
-          </form>
-          <p class="notify-status" aria-live="polite"></p>
+          <h2>Get RanchMaster on the App Store</h2>
+          <p>Available now for iPhone and iPad. Works offline in the pasture and syncs over iCloud.</p>
+          <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+            <a href="https://apps.apple.com/ca/app/ranchmaster/id6834270808" class="btn btn-secondary" target="_blank" rel="noopener">Purchase Now</a>
+          </div>
         </div>
       </div>
     </section>
@@ -298,24 +291,6 @@
   </footer>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    document.querySelectorAll("[data-notify-form]").forEach((form) => {
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const input = form.querySelector('input[type="email"]');
-        const status = form.parentElement.querySelector(".notify-status");
-        const email = input.value.trim();
-        if (!email) return;
-
-        // Static-site fallback: open a pre-filled email to info@glennbonnet.com or replace with a form endpoint (e.g. Formspree).
-        const subject = encodeURIComponent("RanchMaster Release Notification");
-        const body = encodeURIComponent("Please notify me when RanchMaster is released on the App Store.\n\nEmail: " + email);
-        window.location.href = "mailto:info@ranchmaster.ca?subject=" + subject + "&body=" + body;
-
-        status.textContent = "Thanks! Your email app has been opened to register " + email + " for release updates.";
-        form.reset();
-      });
-    });
   </script>
 </body>
 </html>
